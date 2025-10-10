@@ -124,6 +124,34 @@
           </div>
         </div>
 
+        <!-- Power BI Project -->
+        <div class="flex flex-col justify-between hover:bg-gray-900 p-6 rounded-2xl transition border-2 border-pink-500">
+          <div>
+            <h3 class="text-2xl font-semibold text-pink-400 mb-2">📊 Power BI Dashboard</h3>
+            <p class="text-gray-300 mb-4">
+              Visualizing data with Power BI to create interactive dashboards for actionable insights.  
+              Includes charts, KPIs, and interactive filters for better project understanding.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-pink-500/20 text-pink-300 text-sm px-2 py-1 rounded-lg">Power BI</span>
+              <span class="bg-pink-500/20 text-pink-300 text-sm px-2 py-1 rounded-lg">Data Visualization</span>
+              <span class="bg-pink-500/20 text-pink-300 text-sm px-2 py-1 rounded-lg">Dashboard</span>
+            </div>
+          </div>
+          <div class="mt-4 flex gap-4">
+            <!-- GitHub repository for PowerBI project -->
+            <a href="https://github.com/vickyfriss/Power-BI-Demo-Sales-Report" target="_blank" class="text-pink-400 hover:underline">
+              GitHub
+            </a>
+            <!-- Vue Router link to your PowerBI page -->
+            <router-link :to="{ path: '/powerbi' }" class="text-pink-400 hover:underline">
+              View Dashboard ↗
+            </router-link>
+          </div>
+        </div>
+
+
+
       </div>
     </div>
   </section>
