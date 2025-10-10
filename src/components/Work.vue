@@ -11,9 +11,9 @@
         <!-- PFIZER -->
         <div class="flex flex-col justify-between hover:bg-gray-900 p-6 rounded-2xl transition border-2 border-pink-500">
           <div>
-            <h3 class="text-2xl font-semibold text-pink-400 mb-2">💉 PFIZER: Vaccine Conversations</h3>
+            <h3 class="text-2xl font-semibold text-pink-400 mb-2">💉 PFIZER: Everybody’s Talkin’</h3>
             <p class="text-gray-300 mb-4">
-              MSc Finance final project: Sentiment Analysis of Tweets About Pfizer Vaccines and Their Correlation to Pfizer Stock’s Movements (2020–2022).
+              MSc Finance final project: Sentiment Analysis of Pfizer-Related Tweets and Their Correlation to Pfizer Stock’s Movements (2020-2022).
             </p>
             <div class="flex flex-wrap gap-2">
               <span class="bg-pink-500/20 text-pink-300 text-sm px-2 py-1 rounded-lg">R</span>
@@ -35,7 +35,7 @@
           <div>
             <h3 class="text-2xl font-semibold text-pink-400 mb-2">🏥 Decoding Hospitalisation Predictors</h3>
             <p class="text-gray-300 mb-4">
-              MSc Data Science & Analytics final project: Logistic Regression Analysis of Hospitalisation Risks in Multiple Myeloma Patients.
+              MSc Data Science & Analytics final project: A Data-Driven Analysis Using Logistic Regression in Multiple Myeloma Patients.
             </p>
             <div class="flex flex-wrap gap-2">
               <span class="bg-pink-500/20 text-pink-300 text-sm px-2 py-1 rounded-lg">Python</span>
@@ -71,7 +71,7 @@
           <div>
             <h3 class="text-2xl font-semibold text-pink-400 mb-2">🏉 RWC 2025 Front-End Project</h3>
             <p class="text-gray-300 mb-4">
-              Frontend development project built with Vue.js for a responsive, interactive web interface.
+              Vue.js web application for the 2025 Women’s Rugby World Cup, allowing users to view match schedules and team information. The interface is responsive and designed for both desktop and mobile devices.
             </p>
             <div class="flex flex-wrap gap-2">
               <span class="bg-pink-500/20 text-pink-300 text-sm px-2 py-1 rounded-lg">Vue.js</span>
@@ -91,7 +91,7 @@
           <div>
             <h3 class="text-2xl font-semibold text-pink-400 mb-2">🗒️ My Pink Tasks</h3>
             <p class="text-gray-300 mb-4">
-              React task manager with a clean, user-friendly interface for seamless task organization.
+              React-based task management web app where users can register, log in, and manage their pending and completed tasks. The app features a clean and interactive interface built entirely with React.
             </p>
             <div class="flex flex-wrap gap-2">
               <span class="bg-pink-500/20 text-pink-300 text-sm px-2 py-1 rounded-lg">React</span>
@@ -108,9 +108,9 @@
         <!-- Pink Storybook -->
         <div class="flex flex-col justify-between hover:bg-gray-900 p-6 rounded-2xl transition border-2 border-pink-500">
           <div>
-            <h3 class="text-2xl font-semibold text-pink-400 mb-2">🎨 UI Components Showcase</h3>
+            <h3 class="text-2xl font-semibold text-pink-400 mb-2">🎨 Pink Storybook</h3>
             <p class="text-gray-300 mb-4">
-              Project showcasing reusable UI components with consistent design patterns.
+              Storybook component library showcasing a collection of reusable UI components, all designed in pink, with a focus on accessibility and design consistency. Ideal for developers and designers seeking a visual reference for building and testing UI elements.
             </p>
             <div class="flex flex-wrap gap-2">
               <span class="bg-pink-500/20 text-pink-300 text-sm px-2 py-1 rounded-lg">Storybook</span>
