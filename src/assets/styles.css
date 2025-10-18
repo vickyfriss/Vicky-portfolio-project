@@ -3,7 +3,271 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-    scroll-behavior: smooth;
-  }
-  
+/* ===============================
+   GLOBAL TYPOGRAPHY
+   =============================== */
+body {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #e5e7eb;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+/* ===============================
+   HEADINGS (UNIFIED)
+   =============================== */
+.heading {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #ec4899;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+  font-size: 3rem; /* base mobile */
+  text-align: center;
+}
+
+.heading-white { color: #ffffff; }
+.heading-pink { color: #ec4899; }
+
+@media (min-width: 640px) { .heading { font-size: 2rem; } }
+@media (min-width: 768px) { .heading { font-size: 2.5rem; } }
+@media (min-width: 1024px) { .heading { font-size: 3.25em; } }
+@media (min-width: 1280px) { .heading { font-size: 4rem; } }
+
+/* ===============================
+   HERO HEADING
+   =============================== */
+.hero-heading {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #ec4899;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+  font-size: 3rem; /* base mobile */
+  text-align: center;
+}
+
+@media (min-width: 640px) { .hero-heading { font-size: 3rem; } }
+@media (min-width: 768px) { .hero-heading { font-size: 4rem; } }
+@media (min-width: 1024px) { .hero-heading { font-size: 5em; } }
+@media (min-width: 1280px) { .hero-heading { font-size: 6rem; } }
+
+/* ===============================
+   SUBTITLE (hero)
+   =============================== */
+.subtitle {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.4;
+  color: #d1d5db;
+  max-width: 700px;
+  margin: 0 auto 1rem auto;
+  text-align: center;
+}
+
+@media (min-width: 640px) { .subtitle { font-size: 2.5rem; } }
+@media (min-width: 768px) { .subtitle { font-size: 3.25rem; } }
+@media (min-width: 1024px) { .subtitle { font-size: 4.5em; } }
+@media (min-width: 1280px) { .subtitle { font-size: 5.25rem; } }
+
+/* ===============================
+   PARAGRAPH SUBTITLE (hero)
+   =============================== */
+.paragraph-subtitle {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 1.75rem;
+  line-height: 1.4;
+  color: #d1d5db;
+  max-width: 1000px;
+  margin: 0 auto 2rem auto;
+  text-align: center;
+}
+
+@media (min-width: 640px) { .paragraph-subtitle { font-size: 1.25rem; } }
+@media (min-width: 768px) { .paragraph-subtitle { font-size: 1.5rem; } }
+@media (min-width: 1024px) { .paragraph-subtitle { font-size: 1.75rem; } }
+@media (min-width: 1280px) { .paragraph-subtitle { font-size: 2.25rem; } }
+
+/* ===============================
+   STANDARD PARAGRAPH
+   =============================== */
+.section-paragraph {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #d1d5db;
+  max-width: 100%;
+  margin: 1rem auto 2rem auto;
+  text-align: center;
+}
+
+@media (min-width: 640px) { .section-paragraph { font-size: 0.5rem; } }
+@media (min-width: 768px) { .section-paragraph { font-size: 0.75rem; } }
+@media (min-width: 1024px) { .section-paragraph { font-size: 1rem; } }
+@media (min-width: 1280px) { .section-paragraph { font-size: 1.25rem; } }
+
+/* Pink highlight */
+.highlight-pink {
+  font-weight: 600;
+  color: #ec4899;
+}
+
+/* ===============================
+   HERO BUTTONS
+   =============================== */
+.btn {
+  border-radius: 9999px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #ec4899;
+  color: #000000;
+}
+.btn-primary:hover { background-color: #f472b6; }
+
+.btn-outline {
+  border: 2px solid #ec4899;
+  color: #ec4899;
+  background-color: transparent;
+}
+.btn-outline:hover { background-color: #ec4899; color: #000000; }
+
+/* Button group (equal width) */
+.button-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.button-group .btn {
+  flex: 1 1 auto;
+  text-align: center;
+  white-space: nowrap;
+  min-width: 10rem;
+}
+
+/* ===============================
+   SECTIONS
+   =============================== */
+.section {
+  padding: 6rem 1.5rem;
+  background-color: #000000;
+  color: #e5e7eb;
+}
+
+.section-center {
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* ===============================
+   CARDS (About, Skills, Projects, Highlights)
+   =============================== */
+.card,
+.about-card,
+.skills-box,
+.project-card {
+  background-color: #111111;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 2px solid #ec4899;
+  transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover,
+.about-card:hover,
+.skills-box:hover,
+.project-card:hover {
+  transform: translateY(-4px);
+  background-color: #1f1f1f;
+}
+
+.card h3,
+.about-card h3,
+.skills-box h3,
+.project-card h3 {
+  font-family: 'Georgia', serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #f472b6;
+  margin-bottom: 0.75rem;
+  text-align: left;
+}
+
+.card p,
+.about-card p,
+.skills-box ul li,
+.project-card p {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #d1d5db;
+  line-height: 1.6;
+}
+
+.card img,
+.project-card img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.project-card .card-tech {
+  color: #f472b6;
+  font-size: 0.875rem;
+  text-align: left;
+}
+
+.project-card a {
+  color: #f472b6;
+  text-decoration: underline;
+  margin-top: 0.75rem;
+  display: inline-block;
+  text-align: left;
+}
+
+.project-card a:hover { color: #fbb6ce; }
+
+/* ===============================
+   ANIMATIONS
+   =============================== */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in { animation: fade-in 0.8s ease forwards; }
+.animate-fade-in.delay-200 { animation-delay: 0.2s; }
+.animate-fade-in.delay-400 { animation-delay: 0.4s; }
+
+/* ===============================
+   SECTION GRID CARDS
+   =============================== */
+.section-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* About / Skills / Highlights (4 columns) */
+.section-grid-4 {
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) { .section-grid-4 { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .section-grid-4 { grid-template-columns: repeat(4, 1fr); } }
+
+/* Projects (3 columns) */
+.section-grid-3 {
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) { .section-grid-3 { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .section-grid-3 { grid-template-columns: repeat(3, 1fr); } }

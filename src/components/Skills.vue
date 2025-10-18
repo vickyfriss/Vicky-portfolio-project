@@ -1,15 +1,16 @@
 <template>
-  <section id="skills" class="bg-black text-gray-200 py-24 px-6">
-    <div class="max-w-6xl mx-auto text-center">
-      <h2 class="text-4xl md:text-5xl font-serif font-bold text-pink-500 mb-16">
-        Skills
-      </h2>
+  <section id="skills" class="section">
+    <div class="section-center text-left">
 
-      <div class="grid md:grid-cols-3 gap-10 text-left">
+      <!-- Heading -->
+      <h2 class="heading heading-pink text-center">Skills</h2>
+
+      <!-- Skills Cards -->
+      <div class="section-grid section-grid-3">
         <!-- FRONT END -->
-        <div class="hover:bg-gray-900 p-6 rounded-2xl transition">
-          <h3 class="text-2xl font-semibold text-pink-400 mb-4">🎨 Front End</h3>
-          <ul class="space-y-2 text-gray-300">
+        <div class="card">
+          <h3>🎨 Front End</h3>
+          <ul class="list-disc pl-5 space-y-2 text-gray-300">
             <li>⚛️ React</li>
             <li>🖼️ Vue.js</li>
             <li>🌈 Tailwind CSS</li>
@@ -21,9 +22,9 @@
         </div>
 
         <!-- DATA SCIENCE & ANALYTICS -->
-        <div class="hover:bg-gray-900 p-6 rounded-2xl transition">
-          <h3 class="text-2xl font-semibold text-pink-400 mb-4">📊 Data Science & Analytics</h3>
-          <ul class="space-y-2 text-gray-300">
+        <div class="card">
+          <h3>📊 Data Science & Analytics</h3>
+          <ul class="list-disc pl-5 space-y-2 text-gray-300">
             <li>🐍 Python</li>
             <li>🧮 R</li>
             <li>🗄️ SQL (MySQL, AWS Athena, Looker)</li>
@@ -37,9 +38,9 @@
         </div>
 
         <!-- TOOLS & OTHER -->
-        <div class="hover:bg-gray-900 p-6 rounded-2xl transition">
-          <h3 class="text-2xl font-semibold text-pink-400 mb-4">🧰 Tools & Other Skills</h3>
-          <ul class="space-y-2 text-gray-300">
+        <div class="card">
+          <h3>🧰 Tools & Other Skills</h3>
+          <ul class="list-disc pl-5 space-y-2 text-gray-300">
             <li>☁️ AWS (SageMaker, S3)</li>
             <li>🧰 Git & GitHub</li>
             <li>👁️ Lookout</li>
@@ -51,9 +52,7 @@
           </ul>
         </div>
       </div>
+
     </div>
   </section>
 </template>
-
-<script setup>
-</script>
