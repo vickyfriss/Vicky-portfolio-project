@@ -2,7 +2,7 @@
   <div class="bg-black">
 
     <!-- Greeting Section -->
-    <section id="homehero"><HomeHero /></section>
+    <section id="home"><HomeHero /></section>
 
     <!-- About Section -->
     <section id="about"><AboutSection /></section>
