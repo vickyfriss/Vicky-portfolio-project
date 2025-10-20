@@ -79,15 +79,15 @@ body {
   font-size: 1.75rem;
   line-height: 1.4;
   color: #d1d5db;
-  max-width: 1000px;
-  margin: 0 auto 2rem auto;
+  /* max-width: 1000px;*/
+  margin: 0 auto 3rem auto;
   text-align: center;
 }
 
-@media (min-width: 640px) { .paragraph-subtitle { font-size: 1.25rem; } }
-@media (min-width: 768px) { .paragraph-subtitle { font-size: 1.5rem; } }
-@media (min-width: 1024px) { .paragraph-subtitle { font-size: 1.75rem; } }
-@media (min-width: 1280px) { .paragraph-subtitle { font-size: 2.25rem; } }
+@media (min-width: 640px) { .paragraph-subtitle { font-size: 1.00rem; } }
+@media (min-width: 768px) { .paragraph-subtitle { font-size: 1.25rem; } }
+@media (min-width: 1024px) { .paragraph-subtitle { font-size: 1.5rem; } }
+@media (min-width: 1280px) { .paragraph-subtitle { font-size: 2.00rem; } }
 
 /* ===============================
    STANDARD PARAGRAPH
@@ -116,44 +116,53 @@ body {
 /* ===============================
    HERO BUTTONS
    =============================== */
-.btn {
-  border-radius: 9999px;
-  font-weight: 500;
-  text-decoration: none;
-  display: inline-block;
-  padding: 0.75rem 2rem;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  text-align: center;
-}
-
-.btn-primary {
-  background-color: #ec4899;
-  color: #000000;
-}
-.btn-primary:hover { background-color: #f472b6; }
-
-.btn-outline {
-  border: 2px solid #ec4899;
-  color: #ec4899;
-  background-color: transparent;
-}
-.btn-outline:hover { background-color: #ec4899; color: #000000; }
-
-/* Button group (equal width) */
+/* Button group layout */
 .button-group {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: flex;              /* use flex instead of inline-grid */
+  justify-content: center;    /* keep buttons centered */
+  gap: 1.25rem;
+  flex-wrap: wrap;            /* wrap buttons on small screens */
 }
 
 .button-group .btn {
-  flex: 1 1 auto;
-  text-align: center;
+  display: block;             /* proper flex alignment */
+  text-align: center;         /* text always centered */
+  min-width: 12rem;           /* minimum width for mobile */
+  padding: 0.9rem 2.2rem;     
+  border-radius: 9999px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
   white-space: nowrap;
-  min-width: 10rem;
+  flex: 0 1 auto;             /* allow shrinking on very small screens */
+  box-sizing: border-box;     /* include padding in width */
 }
+
+/* Primary CTA */
+.btn-primary {
+  background: linear-gradient(135deg, #ff66a1 0%, #ff2e74 100%);
+  color: #fff;
+  box-shadow: 0 6px 20px rgba(255, 46, 116, 0.4);
+}
+
+.btn-primary:hover {
+  background-color: #ff2e74; /* solid fuchsia on hover */
+  background-image: none;
+}
+
+/* Outline button */
+.btn-outline {
+  border: 2px solid #ff2e74;
+  color: #ff2e74;
+  background-color: transparent;
+}
+
+.btn-outline:hover {
+  background-color: #ff2e74;
+  color: #fff;
+}
+
+  
 
 /* ===============================
    SECTIONS
