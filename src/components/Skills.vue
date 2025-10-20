@@ -1,58 +1,72 @@
 <template>
   <section id="skills" class="section">
-    <div class="section-center text-left">
-
+    <div class="section-center text-center">
       <!-- Heading -->
-      <h2 class="heading heading-pink text-center">Skills</h2>
+      <h2 class="heading heading-pink mb-12">Skills</h2>
 
-      <!-- Skills Cards -->
-      <div class="section-grid section-grid-3">
-        <!-- FRONT END -->
-        <div class="card">
-          <h3>🎨 Front End</h3>
-          <ul class="list-disc pl-5 space-y-2 text-gray-300">
-            <li>⚛️ React</li>
-            <li>🖼️ Vue.js</li>
-            <li>🌈 Tailwind CSS</li>
-            <li>⚡ Vite</li>
-            <li>📦 Storybook</li>
-            <li>🔥 Firebase</li>
-            <li>🧩 HTML & CSS</li>
-          </ul>
-        </div>
+      <!-- Skills Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-        <!-- DATA SCIENCE & ANALYTICS -->
-        <div class="card">
-          <h3>📊 Data Science & Analytics</h3>
-          <ul class="list-disc pl-5 space-y-2 text-gray-300">
-            <li>🐍 Python</li>
-            <li>🧮 R</li>
-            <li>🗄️ SQL (MySQL, AWS Athena, Looker)</li>
-            <li>🤖 Machine Learning & Predictive Modelling</li>
-            <li>🩺 Healthcare Modelling</li>
-            <li>📈 Data Visualisation (Tableau, Power BI)</li>
-            <li>🔍 Large Language Models</li>
-            <li>📏 Statistical Analysis & Operational Research</li>
-            <li>🧠 Time Series, Forecasting & Simulation</li>
-          </ul>
-        </div>
+<!-- FRONT END -->
+<div class="card p-6 flex flex-col items-start gap-4 bg-slate-800 rounded-xl shadow-md hover:shadow-slate-600/50 transition-all">
+  <h3 class="text-xl font-semibold flex items-center gap-2">🎨 Front End</h3>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-2">
+    <span class="skill-badge">🟨 JavaScript</span>
+    <span class="skill-badge">⚛️ React</span>
+    <span class="skill-badge">🖼️ Vue.js</span>
+    <span class="skill-badge">🌈 Tailwind CSS</span>
+    <span class="skill-badge">⚡ Vite</span>
+    <span class="skill-badge">📦 Storybook</span>
+    <span class="skill-badge">🔥 Firebase</span>
+    <span class="skill-badge">🧩 HTML</span>
+    <span class="skill-badge">🎨 CSS</span>
+    <span class="skill-badge">📊 Highcharts</span>
+    <span class="skill-badge">📱 Responsive Design</span>
+  </div>
+</div>
 
-        <!-- TOOLS & OTHER -->
-        <div class="card">
-          <h3>🧰 Tools & Other Skills</h3>
-          <ul class="list-disc pl-5 space-y-2 text-gray-300">
-            <li>☁️ AWS (SageMaker, S3)</li>
-            <li>🧰 Git & GitHub</li>
-            <li>👁️ Lookout</li>
-            <li>💳 Fintech & Compliance Analytics</li>
-            <li>📊 Excel & Google Analytics</li>
-            <li>🗂️ Project Management (Jira, Agile)</li>
-            <li>💬 Communication & Team Collaboration</li>
-            <li>🌍 English, Spanish & Portuguese</li>
-          </ul>
-        </div>
+<!-- DATA SCIENCE & ANALYTICS -->
+<div class="card p-6 flex flex-col items-start gap-4 bg-teal-800 rounded-xl shadow-md hover:shadow-teal-600/50 transition-all">
+  <h3 class="text-xl font-semibold flex items-center gap-2">📊 Data Science & Analytics</h3>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-2">
+    <span class="skill-badge">🐍 Python</span>
+    <span class="skill-badge">🧮 R</span>
+    <span class="skill-badge">🗄️ SQL</span>
+    <span class="skill-badge">🤖 ML</span>
+    <span class="skill-badge">📈 Predictive Modelling</span>
+    <span class="skill-badge">🩺 Healthcare Modelling</span>
+    <span class="skill-badge">📊 Tableau</span>
+    <span class="skill-badge">📊 Power BI</span>
+    <span class="skill-badge">🔍 LLMs</span>
+    <span class="skill-badge">📏 Stats</span>
+    <span class="skill-badge">🧠 Time Series</span>
+    <span class="skill-badge">🔮 Simulation</span>
+    <span class="skill-badge">⚙️ Operational Research</span>
+  </div>
+</div>
+
+<!-- TOOLS & OTHER -->
+<div class="card p-6 flex flex-col items-start gap-4 bg-amber-800 rounded-xl shadow-md hover:shadow-amber-600/50 transition-all">
+  <h3 class="text-xl font-semibold flex items-center gap-2">🧰 Tools & Other Skills</h3>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-2">
+    <span class="skill-badge">☁️ AWS</span>
+    <span class="skill-badge">🧰 Git</span>
+    <span class="skill-badge">🐱 GitHub</span>
+    <span class="skill-badge">👁️ Lookout</span>
+    <span class="skill-badge">💳 Fintech</span>
+    <span class="skill-badge">💬 Communication</span>
+    <span class="skill-badge">📊 Excel</span>
+    <span class="skill-badge">📈 Google Analytics</span>
+    <span class="skill-badge">🗂️ Project Management</span>
+    <span class="skill-badge">🛡️ Compliance Analytics</span>
+    <span class="skill-badge">🌎 English</span>
+    <span class="skill-badge">🌎 Spanish</span>
+    <span class="skill-badge">🌎 Portuguese</span>
+  </div>
+</div>
+
+
       </div>
-
     </div>
   </section>
 </template>

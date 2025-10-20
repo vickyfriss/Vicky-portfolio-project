@@ -6,9 +6,12 @@
 
       <!-- Grid for projects -->
       <div class="section-grid section-grid-3 text-left">
-        
-        <!-- PFIZER -->
-        <div class="card flex flex-col justify-between">
+
+        <!-- PFIZER (DS) -->
+        <div class="card relative flex flex-col justify-between p-4 bg-gray-900 rounded-xl shadow-lg">
+          <span class="absolute top-2 right-2 text-xs font-semibold px-2 py-1 rounded-full bg-purple-500 text-white">
+            DS
+          </span>
           <div>
             <h3 class="card-title">💉 PFIZER: Everybody’s Talkin’</h3>
             <p class="card-text">
@@ -25,8 +28,11 @@
           </a>
         </div>
 
-        <!-- Hospitalisation Predictors -->
-        <div class="card flex flex-col justify-between">
+        <!-- Hospitalisation Predictors (DS) -->
+        <div class="card relative flex flex-col justify-between p-4 bg-gray-900 rounded-xl shadow-lg">
+          <span class="absolute top-2 right-2 text-xs font-semibold px-2 py-1 rounded-full bg-purple-500 text-white">
+            DS
+          </span>
           <div>
             <h3 class="card-title">🏥 Decoding Hospitalisation Predictors</h3>
             <p class="card-text">
@@ -43,8 +49,11 @@
           </a>
         </div>
 
-        <!-- Energy Usage -->
-        <div class="card flex flex-col justify-between">
+        <!-- Energy Usage (DS) -->
+        <div class="card relative flex flex-col justify-between p-4 bg-gray-900 rounded-xl shadow-lg">
+          <span class="absolute top-2 right-2 text-xs font-semibold px-2 py-1 rounded-full bg-purple-500 text-white">
+            DS
+          </span>
           <div>
             <h3 class="card-title">⚡ Energy Usage Prediction</h3>
             <p class="card-text">
@@ -61,8 +70,33 @@
           </a>
         </div>
 
-        <!-- RWC -->
-        <div class="card flex flex-col justify-between">
+        <!-- Power BI (DS) -->
+        <div class="card relative flex flex-col justify-between p-4 bg-gray-900 rounded-xl shadow-lg">
+          <span class="absolute top-2 right-2 text-xs font-semibold px-2 py-1 rounded-full bg-purple-500 text-white">
+            DS
+          </span>
+          <div>
+            <h3 class="card-title">📊 Power BI Dashboard</h3>
+            <p class="card-text">
+              Visualising data with Power BI to create interactive dashboards for actionable insights. Includes charts, KPIs, and interactive filters for better project understanding.
+            </p>
+            <div class="flex flex-wrap gap-2 mt-2">
+              <span class="bg-pink-500/20 text-pink-300 text-sm px-2 py-1 rounded-lg">Power BI</span>
+              <span class="bg-pink-500/20 text-pink-300 text-sm px-2 py-1 rounded-lg">Data Visualisation</span>
+              <span class="bg-pink-500/20 text-pink-300 text-sm px-2 py-1 rounded-lg">Dashboard</span>
+            </div>
+          </div>
+          <div class="mt-4 flex gap-4">
+            <a href="https://github.com/vickyfriss/Power-BI-Demo-Sales-Report" target="_blank" class="card-tech">GitHub</a>
+            <router-link :to="{ path: '/powerbi' }" class="card-tech">View Dashboard ↗</router-link>
+          </div>
+        </div>
+
+        <!-- RWC (FE) -->
+        <div class="card relative flex flex-col justify-between p-4 bg-gray-900 rounded-xl shadow-lg">
+          <span class="absolute top-2 right-2 text-xs font-semibold px-2 py-1 rounded-full bg-blue-500 text-white">
+            FE
+          </span>
           <div>
             <h3 class="card-title">🏉 RWC 2025 Front-End Project</h3>
             <p class="card-text">
@@ -73,6 +107,7 @@
               <span class="bg-pink-500/20 text-pink-300 text-sm px-2 py-1 rounded-lg">Vite</span>
               <span class="bg-pink-500/20 text-pink-300 text-sm px-2 py-1 rounded-lg">Tailwind CSS</span>
               <span class="bg-pink-500/20 text-pink-300 text-sm px-2 py-1 rounded-lg">Firebase</span>
+              <span class="bg-pink-500/20 text-pink-300 text-sm px-2 py-1 rounded-lg">Highcharts</span>
             </div>
           </div>
           <div class="mt-4 flex gap-4">
@@ -81,8 +116,11 @@
           </div>
         </div>
 
-        <!-- Pink Storybook -->
-        <div class="card flex flex-col justify-between">
+        <!-- Pink Storybook (FE) -->
+        <div class="card relative flex flex-col justify-between p-4 bg-gray-900 rounded-xl shadow-lg">
+          <span class="absolute top-2 right-2 text-xs font-semibold px-2 py-1 rounded-full bg-blue-500 text-white">
+            FE
+          </span>
           <div>
             <h3 class="card-title">🎨 Pink Storybook</h3>
             <p class="card-text">
@@ -97,26 +135,6 @@
           <div class="mt-4 flex gap-4">
             <a href="https://github.com/vickyfriss/Pink-storybook" target="_blank" class="card-tech">GitHub</a>
             <a href="https://pink-storybook-kn2luvem1-vickyfriss-projects.vercel.app/" target="_blank" class="card-tech">Live Demo ↗</a>
-          </div>
-        </div>
-
-        <!-- Power BI -->
-        <div class="card flex flex-col justify-between">
-          <div>
-            <h3 class="card-title">📊 Power BI Dashboard</h3>
-            <p class="card-text">
-              Visualising data with Power BI to create interactive dashboards for actionable insights.  
-              Includes charts, KPIs, and interactive filters for better project understanding.
-            </p>
-            <div class="flex flex-wrap gap-2 mt-2">
-              <span class="bg-pink-500/20 text-pink-300 text-sm px-2 py-1 rounded-lg">Power BI</span>
-              <span class="bg-pink-500/20 text-pink-300 text-sm px-2 py-1 rounded-lg">Data Visualisation</span>
-              <span class="bg-pink-500/20 text-pink-300 text-sm px-2 py-1 rounded-lg">Dashboard</span>
-            </div>
-          </div>
-          <div class="mt-4 flex gap-4">
-            <a href="https://github.com/vickyfriss/Power-BI-Demo-Sales-Report" target="_blank" class="card-tech">GitHub</a>
-            <router-link :to="{ path: '/powerbi' }" class="card-tech">View Dashboard ↗</router-link>
           </div>
         </div>
 
