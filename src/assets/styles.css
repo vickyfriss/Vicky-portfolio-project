@@ -162,6 +162,34 @@ body {
   color: #fff;
 }
 
+
+/* ===============================
+   SOCIAL ICON BUTTONS
+   =============================== */
+   .social-btn {
+    width: 3.5rem;             /* circular size */
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid #ff2e74;
+    color: #ff2e74;            /* default icon color */
+    background-color: transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .social-btn:hover {
+    background-color: #ff2e74; /* pink background */
+    color: #ffffff;               /* icon turns white */
+  }
+  
+  .social-btn i {
+    font-size: 1.25rem;         /* icon size */
+    transition: color 0.3s ease;
+  }
+
   
 
 /* ===============================

@@ -11,29 +11,18 @@
         I’m always open to collaborations, freelance projects, or a chat about data and frontend!
       </p>
 
-      <!-- Buttons -->
-      <div class="button-group flex flex-col md:flex-row gap-4 md:gap-6 lg:gap-8 justify-center">
-        <a
-          href="mailto:vicky_friss@hotmail.com"
-          class="btn btn-primary"
-        >
-          Email
-        </a>
-        <a
-          href="https://www.linkedin.com/in/victoria-friss-de-kereki/"
-          target="_blank"
-          class="btn btn-primary"
-        >
-          LinkedIn
-        </a>
-        <a
-          href="https://github.com/vickyfriss"
-          target="_blank"
-          class="btn btn-primary"
-        >
-          GitHub
-        </a>
-      </div>
+      <!-- Circular Social Buttons -->
+      <div class="flex justify-center gap-6 mt-12 social-group">
+  <a href="mailto:vicky_friss@hotmail.com" class="social-btn">
+    <i class="fas fa-envelope"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/victoria-friss-de-kereki/" target="_blank" class="social-btn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+  <a href="https://github.com/vickyfriss" target="_blank" class="social-btn">
+    <i class="fab fa-github"></i>
+  </a>
+</div>
     </div>
   </section>
 </template>

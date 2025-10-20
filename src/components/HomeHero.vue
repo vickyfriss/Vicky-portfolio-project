@@ -12,11 +12,24 @@
       I turn complex data into clear insights and elegant interfaces — with a touch of creativity 💖
     </p>
 
-    <!-- Buttons -->
-    <div class="button-group animate-fade-in delay-400" ref="buttonGroup">
+    <!-- Main Buttons -->
+    <div class="button-group animate-fade-in delay-400 mb-12" ref="buttonGroup">
       <a href="mailto:vicky_friss@hotmail.com" class="btn btn-primary cta-btn">Let's work together</a>
       <router-link to="/work" class="btn btn-outline">See my Work</router-link>
     </div>
+
+    <!-- Circular Social Buttons -->
+    <div class="flex justify-center gap-6 mt-12 social-group">
+  <a href="mailto:vicky_friss@hotmail.com" class="social-btn">
+    <i class="fas fa-envelope"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/victoria-friss-de-kereki/" target="_blank" class="social-btn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+  <a href="https://github.com/vickyfriss" target="_blank" class="social-btn">
+    <i class="fab fa-github"></i>
+  </a>
+</div>
   </section>
 </template>
 
