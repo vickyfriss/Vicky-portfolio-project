@@ -6,33 +6,60 @@
         Victoria Friss de Kereki
       </div>
 
-      <!-- Hamburger Icon (mobile only) -->
-      <button 
-        @click="isOpen = !isOpen" 
-        class="md:hidden focus:outline-none"
-        aria-label="Toggle menu"
-      >
-        <svg v-if="!isOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-        <svg v-else xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
+      <!-- Desktop Navigation Links + Contact Button -->
+      <div class="hidden md:flex items-center gap-4">
+        <!-- Desktop Links -->
+        <ul class="flex gap-6 md:gap-8 lg:gap-10 text-sm md:text-base lg:text-lg">
+          <li v-for="section in sections" :key="section">
+            <a href="#" @click.prevent="navigateTo(section)" class="hover:text-pink-500 transition">{{ section }}</a>
+          </li>
+        </ul>
 
-      <!-- Navigation Links -->
-      <ul class="hidden md:flex gap-6 md:gap-8 lg:gap-10 text-sm md:text-base lg:text-lg">
-        <li v-for="section in sections" :key="section">
-          <a href="#" @click.prevent="navigateTo(section)" class="hover:text-pink-500 transition">{{ section }}</a>
-        </li>
-      </ul>
+        <!-- Desktop Contact Button -->
+        <a href="mailto:vicky_friss@hotmail.com" class="btn btn-outline btn-fit">
+          Contact
+        </a>
+      </div>
+
+      <!-- Hamburger Icon (mobile only) -->
+      <div class="md:hidden">
+        <button 
+          @click="isOpen = !isOpen" 
+          class="focus:outline-none"
+          aria-label="Toggle menu"
+        >
+          <svg v-if="!isOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg v-else xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
     </div>
 
     <!-- Mobile Menu -->
     <div v-if="isOpen" class="md:hidden bg-black border-t border-gray-800">
-      <ul class="flex flex-col items-center gap-4 py-4 text-base">
+      <ul class="flex flex-col items-center gap-4 py-4 text-base w-full">
+        <!-- Other sections -->
         <li v-for="section in sections" :key="section + '-mobile'">
-          <a href="#" @click.prevent="navigateTo(section); isOpen = false" class="hover:text-pink-500 transition">{{ section }}</a>
+          <a 
+            href="#" 
+            @click.prevent="navigateTo(section); isOpen = false" 
+            class="hover:text-pink-500 transition w-full text-center"
+          >
+            {{ section }}
+          </a>
+        </li>
+        <!-- Contact button only in mobile menu -->
+        <li class="w-full">
+          <a 
+  href="mailto:vicky_friss@hotmail.com" 
+  @click="isOpen = false"
+  class="btn btn-outline btn-fit w-full text-center"
+>
+  Contact
+</a>
         </li>
       </ul>
     </div>
@@ -47,16 +74,15 @@ const isOpen = ref(false)
 const router = useRouter()
 const route = useRoute()
 
-const sections = ['Home', 'About', 'Work', 'Skills', 'Contact']
+// Sections for nav links (Contact handled separately)
+const sections = ['Home', 'About', 'Work', 'Skills']
 
 function navigateTo(section) {
-  const id = section.toLowerCase() // match section id in Home
+  const id = section.toLowerCase()
   if (route.path === '/') {
-    // already on home, just scroll
     const el = document.getElementById(id)
     if (el) el.scrollIntoView({ behavior: 'smooth' })
   } else {
-    // go to home first, then scroll after next tick
     router.push('/').then(() => {
       setTimeout(() => {
         const el = document.getElementById(id)

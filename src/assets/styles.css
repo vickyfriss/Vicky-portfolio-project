@@ -124,6 +124,7 @@ body {
 /* ===============================
    HERO BUTTONS
    =============================== */
+/* Button group container */
 .button-group {
   display: flex;
   justify-content: center;
@@ -131,41 +132,65 @@ body {
   flex-wrap: wrap;
 }
 
-.button-group .btn {
-  display: block;
-  text-align: center;
-  min-width: 11rem;
-  padding: 0.9rem 2rem;
-  border-radius: 9999px;
-  font-weight: 700;
+/* Base button style (applies to buttons and links) */
+.btn,
+a.btn,
+button.btn {
+  display: inline-block;         /* ensures padding, min-width, border-radius work */
+  text-align: center;            /* center text */
+  min-width: 11rem;              /* consistent width */
+  padding: 0.9rem 2rem;          /* padding */
+  border-radius: 9999px;         /* pill shape */
+  font-weight: 700;              /* bold text */
   cursor: pointer;
   transition: all 0.3s ease;
-  white-space: nowrap;
-  flex: 0 1 auto;
-  box-sizing: border-box;
+  white-space: nowrap;           /* prevent wrapping */
+  box-sizing: border-box;        /* padding included in width */
+  text-decoration: none;         /* remove underline on links */
+  flex: 0 1 auto;                /* allow flex shrink/grow in button group */
 }
 
-.btn-primary {
+/* Primary button */
+.btn-primary,
+a.btn-primary,
+button.btn-primary {
   background: linear-gradient(135deg, #ff66a1 0%, #ff2e74 100%);
   color: #fff;
   box-shadow: 0 6px 20px rgba(255, 46, 116, 0.4);
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+a.btn-primary:hover,
+button.btn-primary:hover {
   background-color: #ff2e74;
   background-image: none;
 }
 
-.btn-outline {
+/* Outline button */
+.btn-outline,
+a.btn-outline,
+button.btn-outline {
   border: 2px solid #ff2e74;
   color: #ff2e74;
   background-color: transparent;
 }
 
-.btn-outline:hover {
+.btn-outline:hover,
+a.btn-outline:hover,
+button.btn-outline:hover {
   background-color: #ff2e74;
   color: #fff;
 }
+
+/* Small/fitted button for Contact only */
+.btn.btn-outline.btn-fit {
+  min-width: auto !important;      /* override the 11rem */
+  padding: 0.5rem 1rem !important; /* smaller padding */
+  display: inline-block;           /* shrink to fit text */
+}
+
+
+
 
 /* ===============================
    SOCIAL ICON BUTTONS
