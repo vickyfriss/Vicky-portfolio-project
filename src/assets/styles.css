@@ -15,7 +15,9 @@ body {
   background-color: #000000;
 }
 
-/* Add a bit of side spacing sitewide */
+/* ===============================
+   MAIN WRAPPER
+   =============================== */
 .main-wrapper {
   max-width: 88%;
   margin: 0 auto;
@@ -25,50 +27,42 @@ body {
 }
 
 /* ===============================
-   HEADINGS (UNIFIED)
+   HEADINGS
    =============================== */
-.heading {
+.heading, .hero-heading {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-weight: 700;
   color: #ec4899;
   line-height: 1.1;
   margin-bottom: 2rem;
-  font-size: 2.75rem; /* slightly reduced from 3rem */
   text-align: center;
 }
 
-.heading-white { color: #ffffff; }
-.heading-pink { color: #ec4899; }
+.heading { font-size: 2.75rem; }
+.hero-heading { font-size: 2.75rem; }
 
-@media (min-width: 640px) { .heading { font-size: 2.25rem; } }
-@media (min-width: 768px) { .heading { font-size: 2.75rem; } }
-@media (min-width: 1024px) { .heading { font-size: 3rem; } }
-@media (min-width: 1280px) { .heading { font-size: 3.5rem; } }
-
-/* ===============================
-   HERO HEADING
-   =============================== */
-.hero-heading {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  color: #ec4899;
-  line-height: 1.1;
-  margin-bottom: 2rem;
-  font-size: 2.75rem; /* middle between 3rem and 2.5rem */
-  text-align: center;
+@media (min-width: 640px) { 
+  .heading { font-size: 2.25rem; }
+  .hero-heading { font-size: 2.5rem; }
+}
+@media (min-width: 768px) { 
+  .heading { font-size: 2.75rem; }
+  .hero-heading { font-size: 3rem; }
+}
+@media (min-width: 1024px) { 
+  .heading { font-size: 3rem; }
+  .hero-heading { font-size: 3.75rem; }
+}
+@media (min-width: 1280px) { 
+  .heading { font-size: 3.5rem; }
+  .hero-heading { font-size: 4.25rem; }
 }
 
-@media (min-width: 640px) { .hero-heading { font-size: 2.5rem; } }
-@media (min-width: 768px) { .hero-heading { font-size: 3rem; } }
-@media (min-width: 1024px) { .hero-heading { font-size: 3.75rem; } }
-@media (min-width: 1280px) { .hero-heading { font-size: 4.25rem; } }
-
 /* ===============================
-   SUBTITLE (hero)
+   SUBTITLES
    =============================== */
 .subtitle {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 2rem; /* down from 2.5rem */
+  font-size: 2rem;
   line-height: 1.4;
   color: #d1d5db;
   max-width: 700px;
@@ -81,12 +75,8 @@ body {
 @media (min-width: 1024px) { .subtitle { font-size: 3.5rem; } }
 @media (min-width: 1280px) { .subtitle { font-size: 4rem; } }
 
-/* ===============================
-   PARAGRAPH SUBTITLE (hero)
-   =============================== */
 .paragraph-subtitle {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 1.25rem; /* slightly smaller */
+  font-size: 1.25rem;
   line-height: 1.4;
   color: #d1d5db;
   margin: 0 auto 3rem auto;
@@ -102,7 +92,6 @@ body {
    STANDARD PARAGRAPH
    =============================== */
 .section-paragraph {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   color: #d1d5db;
@@ -124,73 +113,57 @@ body {
 /* ===============================
    HERO BUTTONS
    =============================== */
-/* Button group container */
 .button-group {
   display: flex;
   justify-content: center;
-  gap: 1.25rem;
+  gap: 1rem;
   flex-wrap: wrap;
 }
 
-/* Base button style (applies to buttons and links) */
 .btn,
 a.btn,
 button.btn {
-  display: inline-block;         /* ensures padding, min-width, border-radius work */
-  text-align: center;            /* center text */
-  min-width: 11rem;              /* consistent width */
-  padding: 0.9rem 2rem;          /* padding */
-  border-radius: 9999px;         /* pill shape */
-  font-weight: 700;              /* bold text */
+  display: inline-block;
+  text-align: center;
+  min-width: 11rem;
+  padding: 0.9rem 2rem;
+  border-radius: 9999px;
+  font-weight: 700;
   cursor: pointer;
   transition: all 0.3s ease;
-  white-space: nowrap;           /* prevent wrapping */
-  box-sizing: border-box;        /* padding included in width */
-  text-decoration: none;         /* remove underline on links */
-  flex: 0 1 auto;                /* allow flex shrink/grow in button group */
+  white-space: nowrap;
+  box-sizing: border-box;
+  text-decoration: none;
+  flex: 0 1 auto;
 }
 
-/* Primary button */
-.btn-primary,
-a.btn-primary,
-button.btn-primary {
+.btn-primary {
   background: linear-gradient(135deg, #ff66a1 0%, #ff2e74 100%);
   color: #fff;
   box-shadow: 0 6px 20px rgba(255, 46, 116, 0.4);
 }
 
-.btn-primary:hover,
-a.btn-primary:hover,
-button.btn-primary:hover {
+.btn-primary:hover {
   background-color: #ff2e74;
   background-image: none;
 }
 
-/* Outline button */
-.btn-outline,
-a.btn-outline,
-button.btn-outline {
+.btn-outline {
   border: 2px solid #ff2e74;
   color: #ff2e74;
   background-color: transparent;
 }
 
-.btn-outline:hover,
-a.btn-outline:hover,
-button.btn-outline:hover {
+.btn-outline:hover {
   background-color: #ff2e74;
   color: #fff;
 }
 
-/* Small/fitted button for Contact only */
 .btn.btn-outline.btn-fit {
-  min-width: auto !important;      /* override the 11rem */
-  padding: 0.5rem 1rem !important; /* smaller padding */
-  display: inline-block;           /* shrink to fit text */
+  min-width: auto !important;
+  padding: 0.5rem 1rem !important;
+  display: inline-block;
 }
-
-
-
 
 /* ===============================
    SOCIAL ICON BUTTONS
@@ -223,21 +196,17 @@ button.btn-outline:hover {
    SECTIONS
    =============================== */
 .section {
-  padding: 5.5rem 0;
+  padding: 5.5rem 1.5rem; /* vertical padding + horizontal padding for mobile */
   background-color: #000000;
   color: #e5e7eb;
 }
 
-.section-center {
-  max-width: 85%;
-  margin: 0 auto;
-  text-align: left;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
+/* Responsive horizontal padding for larger screens */
+@media (min-width: 640px) { .section { padding-left: 2rem; padding-right: 2rem; } }
+@media (min-width: 1024px) { .section { padding-left: 4rem; padding-right: 4rem; } }
 
 /* ===============================
-   CARDS (About, Skills, Projects)
+   CARDS
    =============================== */
 .card,
 .about-card,
@@ -317,19 +286,12 @@ button.btn-outline:hover {
 /* ===============================
    SECTION GRID CARDS
    =============================== */
-.section-grid {
-  display: grid;
-  gap: 1.5rem;
-}
+.section-grid { display: grid; gap: 1.5rem; }
 
-.section-grid-4 {
-  grid-template-columns: 1fr;
-}
+.section-grid-4 { grid-template-columns: 1fr; }
 @media (min-width: 768px) { .section-grid-4 { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 1024px) { .section-grid-4 { grid-template-columns: repeat(4, 1fr); } }
 
-.section-grid-3 {
-  grid-template-columns: 1fr;
-}
+.section-grid-3 { grid-template-columns: 1fr; }
 @media (min-width: 768px) { .section-grid-3 { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 1024px) { .section-grid-3 { grid-template-columns: repeat(3, 1fr); } }
