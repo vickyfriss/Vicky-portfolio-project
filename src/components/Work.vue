@@ -2,16 +2,18 @@
   <section id="projects" class="section">
     <div class="section-center">
       <!-- Heading -->
-      <h1 class="section-title heading heading-pink">Projects</h1>
+      <h1 class="section-title heading heading-pink">Featured Projects</h1>
 
       <!-- Grid for projects -->
       <div class="section-grid section-grid-3 text-left">
 
         <!-- PFIZER (DS) -->
-        <div class="card relative flex flex-col justify-between p-4 bg-gray-900 rounded-xl shadow-lg">
+        <div class="card relative flex flex-col justify-between p-4 bg-gray-900 rounded-xl shadow-lg group">
           <span class="absolute top-2 right-2 text-xs font-semibold px-2 py-1 rounded-full bg-purple-500 text-white">
             DS
           </span>
+          <!-- Project Image -->
+          <img src="/images/pfizer-preview.png" alt="Pfizer project preview" class="w-full h-40 object-cover rounded-lg mb-4 transition duration-300 group-hover:scale-105"/>
           <div>
             <h3 class="card-title">💉 PFIZER: Everybody’s Talkin’</h3>
             <p class="card-text">
@@ -29,10 +31,11 @@
         </div>
 
         <!-- Hospitalisation Predictors (DS) -->
-        <div class="card relative flex flex-col justify-between p-4 bg-gray-900 rounded-xl shadow-lg">
+        <div class="card relative flex flex-col justify-between p-4 bg-gray-900 rounded-xl shadow-lg group">
           <span class="absolute top-2 right-2 text-xs font-semibold px-2 py-1 rounded-full bg-purple-500 text-white">
             DS
           </span>
+          <img src="/images/hospitalisation-preview.png" alt="Hospitalisation project preview" class="w-full h-40 object-cover rounded-lg mb-4 transition duration-300 group-hover:scale-105"/>
           <div>
             <h3 class="card-title">🏥 Decoding Hospitalisation Predictors</h3>
             <p class="card-text">
@@ -50,10 +53,11 @@
         </div>
 
         <!-- Energy Usage (DS) -->
-        <div class="card relative flex flex-col justify-between p-4 bg-gray-900 rounded-xl shadow-lg">
+        <div class="card relative flex flex-col justify-between p-4 bg-gray-900 rounded-xl shadow-lg group">
           <span class="absolute top-2 right-2 text-xs font-semibold px-2 py-1 rounded-full bg-purple-500 text-white">
             DS
           </span>
+          <img src="/images/energy-preview.png" alt="Energy usage project preview" class="w-full h-40 object-cover rounded-lg mb-4 transition duration-300 group-hover:scale-105"/>
           <div>
             <h3 class="card-title">⚡ Energy Usage Prediction</h3>
             <p class="card-text">
@@ -71,10 +75,11 @@
         </div>
 
         <!-- Power BI (DS) -->
-        <div class="card relative flex flex-col justify-between p-4 bg-gray-900 rounded-xl shadow-lg">
+        <div class="card relative flex flex-col justify-between p-4 bg-gray-900 rounded-xl shadow-lg group">
           <span class="absolute top-2 right-2 text-xs font-semibold px-2 py-1 rounded-full bg-purple-500 text-white">
             DS
           </span>
+          <img src="/images/powerbi-preview.png" alt="Power BI project preview" class="w-full h-40 object-cover rounded-lg mb-4 transition duration-300 group-hover:scale-105"/>
           <div>
             <h3 class="card-title">📊 Power BI Dashboard</h3>
             <p class="card-text">
@@ -93,10 +98,11 @@
         </div>
 
         <!-- RWC (FE) -->
-        <div class="card relative flex flex-col justify-between p-4 bg-gray-900 rounded-xl shadow-lg">
+        <div class="card relative flex flex-col justify-between p-4 bg-gray-900 rounded-xl shadow-lg group">
           <span class="absolute top-2 right-2 text-xs font-semibold px-2 py-1 rounded-full bg-blue-500 text-white">
             FE
           </span>
+          <img src="/images/rwc-preview.png" alt="RWC project preview" class="w-full h-40 object-cover rounded-lg mb-4 transition duration-300 group-hover:scale-105"/>
           <div>
             <h3 class="card-title">🏉 RWC 2025 Front-End Project</h3>
             <p class="card-text">
@@ -117,10 +123,11 @@
         </div>
 
         <!-- Pink Storybook (FE) -->
-        <div class="card relative flex flex-col justify-between p-4 bg-gray-900 rounded-xl shadow-lg">
+        <div class="card relative flex flex-col justify-between p-4 bg-gray-900 rounded-xl shadow-lg group">
           <span class="absolute top-2 right-2 text-xs font-semibold px-2 py-1 rounded-full bg-blue-500 text-white">
             FE
           </span>
+          <img src="/images/pink-storybook-preview.png" alt="Pink Storybook preview" class="w-full h-40 object-cover rounded-lg mb-4 transition duration-300 group-hover:scale-105"/>
           <div>
             <h3 class="card-title">🎨 Pink Storybook</h3>
             <p class="card-text">
