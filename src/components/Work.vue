@@ -8,8 +8,8 @@
       <div class="section-grid section-grid-3 text-left">
 
         <!-- PFIZER (DS) -->
-        <div class="card relative flex flex-col justify-between p-4 bg-gray-900 rounded-xl shadow-lg group" tabindex="0">
-          <span class="absolute -top-3 right-0 text-xs font-semibold px-2 py-1 rounded-full bg-purple-500 text-white z-10 transform translate-x-1/2">
+<div class="card relative flex flex-col justify-between p-4 bg-gray-900 rounded-xl shadow-lg group">
+              <span class="absolute top-2 right-2 text-xs font-semibold px-2 py-1 rounded-full bg-purple-500 text-white z-10">
             DS
           </span>
           <div class="relative">
@@ -41,7 +41,7 @@
 
         <!-- Hospitalisation Predictors (DS) -->
         <div class="card relative flex flex-col justify-between p-4 bg-gray-900 rounded-xl shadow-lg group" tabindex="0">
-          <span class="absolute -top-3 right-0 text-xs font-semibold px-2 py-1 rounded-full bg-purple-500 text-white z-10 transform translate-x-1/2">
+          <span class="absolute top-2 right-2 text-xs font-semibold px-2 py-1 rounded-full bg-purple-500 text-white z-10">
             DS
           </span>
           <div class="relative">
@@ -73,7 +73,7 @@
 
         <!-- Energy Usage (DS) -->
         <div class="card relative flex flex-col justify-between p-4 bg-gray-900 rounded-xl shadow-lg group" tabindex="0">
-          <span class="absolute -top-3 right-0 text-xs font-semibold px-2 py-1 rounded-full bg-purple-500 text-white z-10 transform translate-x-1/2">
+          <span class="absolute top-2 right-2 text-xs font-semibold px-2 py-1 rounded-full bg-purple-500 text-white z-10">
             DS
           </span>
           <div class="relative">
@@ -105,7 +105,7 @@
 
         <!-- Power BI (BA) -->
         <div class="card relative flex flex-col justify-between p-4 bg-gray-900 rounded-xl shadow-lg group" tabindex="0">
-          <span class="absolute -top-3 right-0 text-xs font-semibold px-2 py-1 rounded-full bg-purple-500 text-white z-10 transform translate-x-1/2">
+          <span class="absolute top-2 right-2 text-xs font-semibold px-2 py-1 rounded-full bg-purple-500 text-white z-10">
             BA
           </span>
           <div class="relative">
@@ -142,7 +142,7 @@
 
         <!-- RWC (FE) -->
         <div class="card relative flex flex-col justify-between p-4 bg-gray-900 rounded-xl shadow-lg group" tabindex="0">
-          <span class="absolute -top-3 right-0 text-xs font-semibold px-2 py-1 rounded-full bg-blue-500 text-white z-10 transform translate-x-1/2">
+          <span class="absolute top-2 right-2 text-xs font-semibold px-2 py-1 rounded-full bg-blue-500 text-white z-10">
             FE
           </span>
           <div class="relative">
@@ -181,7 +181,7 @@
 
         <!-- Pink Storybook (FE) -->
         <div class="card relative flex flex-col justify-between p-4 bg-gray-900 rounded-xl shadow-lg group" tabindex="0">
-          <span class="absolute -top-3 right-0 text-xs font-semibold px-2 py-1 rounded-full bg-blue-500 text-white z-10 transform translate-x-1/2">
+          <span class="absolute top-2 right-2 text-xs font-semibold px-2 py-1 rounded-full bg-blue-500 text-white z-10">
             FE
           </span>
           <div class="relative">
