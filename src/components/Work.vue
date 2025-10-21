@@ -94,10 +94,10 @@
           </div>
         </div>
 
-        <!-- Power BI (DS) -->
+        <!-- Power BI (BA) -->
         <div class="card relative flex flex-col justify-between p-4 bg-gray-900 rounded-xl shadow-lg group">
           <span class="absolute top-2 right-2 text-xs font-semibold px-2 py-1 rounded-full bg-purple-500 text-white z-10">
-            DS
+            BA
           </span>
           <div class="relative">
             <img src="/images/powerbi-preview.png" alt="Power BI project preview"
