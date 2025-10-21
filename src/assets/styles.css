@@ -12,6 +12,16 @@ body {
   line-height: 1.6;
   scroll-behavior: smooth;
   margin: 0;
+  background-color: #000000;
+}
+
+/* Add a bit of side spacing sitewide */
+.main-wrapper {
+  max-width: 88%;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  box-sizing: border-box;
 }
 
 /* ===============================
@@ -23,17 +33,17 @@ body {
   color: #ec4899;
   line-height: 1.1;
   margin-bottom: 2rem;
-  font-size: 3rem; /* base mobile */
+  font-size: 2.75rem; /* slightly reduced from 3rem */
   text-align: center;
 }
 
 .heading-white { color: #ffffff; }
 .heading-pink { color: #ec4899; }
 
-@media (min-width: 640px) { .heading { font-size: 2rem; } }
-@media (min-width: 768px) { .heading { font-size: 2.5rem; } }
-@media (min-width: 1024px) { .heading { font-size: 3.25em; } }
-@media (min-width: 1280px) { .heading { font-size: 4rem; } }
+@media (min-width: 640px) { .heading { font-size: 2.25rem; } }
+@media (min-width: 768px) { .heading { font-size: 2.75rem; } }
+@media (min-width: 1024px) { .heading { font-size: 3rem; } }
+@media (min-width: 1280px) { .heading { font-size: 3.5rem; } }
 
 /* ===============================
    HERO HEADING
@@ -44,21 +54,21 @@ body {
   color: #ec4899;
   line-height: 1.1;
   margin-bottom: 2rem;
-  font-size: 3rem; /* base mobile */
+  font-size: 2.75rem; /* middle between 3rem and 2.5rem */
   text-align: center;
 }
 
-@media (min-width: 640px) { .hero-heading { font-size: 3rem; } }
-@media (min-width: 768px) { .hero-heading { font-size: 4rem; } }
-@media (min-width: 1024px) { .hero-heading { font-size: 5em; } }
-@media (min-width: 1280px) { .hero-heading { font-size: 6rem; } }
+@media (min-width: 640px) { .hero-heading { font-size: 2.5rem; } }
+@media (min-width: 768px) { .hero-heading { font-size: 3rem; } }
+@media (min-width: 1024px) { .hero-heading { font-size: 3.75rem; } }
+@media (min-width: 1280px) { .hero-heading { font-size: 4.25rem; } }
 
 /* ===============================
    SUBTITLE (hero)
    =============================== */
 .subtitle {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem; /* down from 2.5rem */
   line-height: 1.4;
   color: #d1d5db;
   max-width: 700px;
@@ -66,28 +76,27 @@ body {
   text-align: center;
 }
 
-@media (min-width: 640px) { .subtitle { font-size: 2.5rem; } }
-@media (min-width: 768px) { .subtitle { font-size: 3.25rem; } }
-@media (min-width: 1024px) { .subtitle { font-size: 4.5em; } }
-@media (min-width: 1280px) { .subtitle { font-size: 5.25rem; } }
+@media (min-width: 640px) { .subtitle { font-size: 2.25rem; } }
+@media (min-width: 768px) { .subtitle { font-size: 2.75rem; } }
+@media (min-width: 1024px) { .subtitle { font-size: 3.5rem; } }
+@media (min-width: 1280px) { .subtitle { font-size: 4rem; } }
 
 /* ===============================
    PARAGRAPH SUBTITLE (hero)
    =============================== */
 .paragraph-subtitle {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 1.75rem;
+  font-size: 1.25rem; /* slightly smaller */
   line-height: 1.4;
   color: #d1d5db;
-  /* max-width: 1000px;*/
   margin: 0 auto 3rem auto;
   text-align: center;
 }
 
-@media (min-width: 640px) { .paragraph-subtitle { font-size: 1.00rem; } }
+@media (min-width: 640px) { .paragraph-subtitle { font-size: 1.1rem; } }
 @media (min-width: 768px) { .paragraph-subtitle { font-size: 1.25rem; } }
 @media (min-width: 1024px) { .paragraph-subtitle { font-size: 1.5rem; } }
-@media (min-width: 1280px) { .paragraph-subtitle { font-size: 2.00rem; } }
+@media (min-width: 1280px) { .paragraph-subtitle { font-size: 1.75rem; } }
 
 /* ===============================
    STANDARD PARAGRAPH
@@ -95,19 +104,18 @@ body {
 .section-paragraph {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-size: 1rem;
-  line-height: 1.4;
+  line-height: 1.5;
   color: #d1d5db;
   max-width: 100%;
   margin: 1rem auto 2rem auto;
   text-align: center;
 }
 
-@media (min-width: 640px) { .section-paragraph { font-size: 0.5rem; } }
-@media (min-width: 768px) { .section-paragraph { font-size: 0.75rem; } }
-@media (min-width: 1024px) { .section-paragraph { font-size: 1rem; } }
+@media (min-width: 640px) { .section-paragraph { font-size: 0.9rem; } }
+@media (min-width: 768px) { .section-paragraph { font-size: 1rem; } }
+@media (min-width: 1024px) { .section-paragraph { font-size: 1.1rem; } }
 @media (min-width: 1280px) { .section-paragraph { font-size: 1.25rem; } }
 
-/* Pink highlight */
 .highlight-pink {
   font-weight: 600;
   color: #ec4899;
@@ -116,29 +124,27 @@ body {
 /* ===============================
    HERO BUTTONS
    =============================== */
-/* Button group layout */
 .button-group {
-  display: flex;              /* use flex instead of inline-grid */
-  justify-content: center;    /* keep buttons centered */
+  display: flex;
+  justify-content: center;
   gap: 1.25rem;
-  flex-wrap: wrap;            /* wrap buttons on small screens */
+  flex-wrap: wrap;
 }
 
 .button-group .btn {
-  display: block;             /* proper flex alignment */
-  text-align: center;         /* text always centered */
-  min-width: 12rem;           /* minimum width for mobile */
-  padding: 0.9rem 2.2rem;     
+  display: block;
+  text-align: center;
+  min-width: 11rem;
+  padding: 0.9rem 2rem;
   border-radius: 9999px;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.3s ease;
   white-space: nowrap;
-  flex: 0 1 auto;             /* allow shrinking on very small screens */
-  box-sizing: border-box;     /* include padding in width */
+  flex: 0 1 auto;
+  box-sizing: border-box;
 }
 
-/* Primary CTA */
 .btn-primary {
   background: linear-gradient(135deg, #ff66a1 0%, #ff2e74 100%);
   color: #fff;
@@ -146,11 +152,10 @@ body {
 }
 
 .btn-primary:hover {
-  background-color: #ff2e74; /* solid fuchsia on hover */
+  background-color: #ff2e74;
   background-image: none;
 }
 
-/* Outline button */
 .btn-outline {
   border: 2px solid #ff2e74;
   color: #ff2e74;
@@ -162,55 +167,52 @@ body {
   color: #fff;
 }
 
-
 /* ===============================
    SOCIAL ICON BUTTONS
    =============================== */
-   .social-btn {
-    width: 3.5rem;             /* circular size */
-    height: 3.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    border: 2px solid #ff2e74;
-    color: #ff2e74;            /* default icon color */
-    background-color: transparent;
-    transition: all 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .social-btn:hover {
-    background-color: #ff2e74; /* pink background */
-    color: #ffffff;               /* icon turns white */
-  }
-  
-  .social-btn i {
-    font-size: 1.25rem;         /* icon size */
-    transition: color 0.3s ease;
-  }
+.social-btn {
+  width: 3.25rem;
+  height: 3.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid #ff2e74;
+  color: #ff2e74;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
 
-  
+.social-btn:hover {
+  background-color: #ff2e74;
+  color: #ffffff;
+}
+
+.social-btn i {
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
 
 /* ===============================
    SECTIONS
    =============================== */
 .section {
-  padding: 6rem 1.5rem;
+  padding: 5.5rem 0;
   background-color: #000000;
   color: #e5e7eb;
 }
 
 .section-center {
-  max-width: 80%;
+  max-width: 85%;
   margin: 0 auto;
   text-align: left;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 /* ===============================
-   CARDS (About, Skills, Projects, Highlights)
+   CARDS (About, Skills, Projects)
    =============================== */
 .card,
 .about-card,
@@ -237,7 +239,7 @@ body {
 .project-card h3 {
   font-family: 'Georgia', serif;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   color: #f472b6;
   margin-bottom: 0.75rem;
   text-align: left;
@@ -255,7 +257,7 @@ body {
 .card img,
 .project-card img {
   width: 100%;
-  height: 12rem;
+  height: 11rem;
   object-fit: cover;
   border-radius: 0.5rem;
 }
@@ -295,14 +297,12 @@ body {
   gap: 1.5rem;
 }
 
-/* About / Skills / Highlights (4 columns) */
 .section-grid-4 {
   grid-template-columns: 1fr;
 }
 @media (min-width: 768px) { .section-grid-4 { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 1024px) { .section-grid-4 { grid-template-columns: repeat(4, 1fr); } }
 
-/* Projects (3 columns) */
 .section-grid-3 {
   grid-template-columns: 1fr;
 }
