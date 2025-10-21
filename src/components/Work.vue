@@ -8,7 +8,7 @@
       <div class="section-grid section-grid-3 text-left">
 
         <!-- PFIZER (DS) -->
-<div class="card relative flex flex-col justify-between p-4 bg-gray-900 rounded-xl shadow-lg group">
+        <div class="card relative flex flex-col justify-between p-4 bg-gray-900 rounded-xl shadow-lg group" tabindex="0">
               <span class="absolute top-2 right-2 text-xs font-semibold px-2 py-1 rounded-full bg-purple-500 text-white z-10">
             DS
           </span>
