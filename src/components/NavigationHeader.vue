@@ -6,20 +6,23 @@
         Victoria Friss de Kereki
       </div>
 
-      <!-- Desktop Navigation Links + Contact Button -->
-      <div class="hidden md:flex items-center gap-4">
-        <!-- Desktop Links -->
-        <ul class="flex gap-6 md:gap-8 lg:gap-10 text-sm md:text-base lg:text-lg">
-          <li v-for="section in sections" :key="section">
-            <a href="#" @click.prevent="navigateTo(section)" class="hover:text-pink-500 transition">{{ section }}</a>
-          </li>
-        </ul>
+<!-- Desktop Navigation Links + Contact Button -->
+<div class="hidden md:flex items-center gap-6 md:gap-8 lg:gap-10 text-sm md:text-base lg:text-lg">
+  <!-- Links -->
+  <ul class="flex items-center gap-6 md:gap-8 lg:gap-10">
+    <li v-for="section in sections" :key="section">
+      <a href="#" @click.prevent="navigateTo(section)" class="hover:text-pink-500 transition">{{ section }}</a>
+    </li>
 
-        <!-- Desktop Contact Button -->
-        <a href="mailto:vicky_friss@hotmail.com" class="btn btn-outline btn-fit">
-          Contact
-        </a>
-      </div>
+    <!-- Contact button as part of the same flex -->
+    <li>
+      <a href="mailto:vicky_friss@hotmail.com" class="btn btn-outline btn-fit">
+        Contact
+      </a>
+    </li>
+  </ul>
+</div>
+
 
       <!-- Hamburger Icon (mobile only) -->
       <div class="md:hidden">
@@ -52,15 +55,16 @@
           </a>
         </li>
         <!-- Contact button only in mobile menu -->
-        <li class="w-full">
-          <a 
-  href="mailto:vicky_friss@hotmail.com" 
-  @click="isOpen = false"
-  class="btn btn-outline btn-fit w-full text-center"
->
-  Contact
-</a>
-        </li>
+        <li>
+  <a 
+    href="mailto:vicky_friss@hotmail.com" 
+    @click="isOpen = false"
+    class="btn btn-outline btn-fit"
+  >
+    Contact
+  </a>
+</li>
+
       </ul>
     </div>
   </nav>
