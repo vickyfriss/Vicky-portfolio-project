@@ -17,7 +17,6 @@
             <span class="skill-badge">🌈 Tailwind CSS</span>
             <span class="skill-badge">⚡ Vite</span>
             <span class="skill-badge">📦 Storybook</span>
-            <span class="skill-badge">🔥 Firebase</span>
             <span class="skill-badge">🧩 HTML</span>
             <span class="skill-badge">🎨 CSS</span>
             <span class="skill-badge">📊 Highcharts</span>
@@ -50,6 +49,7 @@
           <h3 class="text-xl font-semibold flex items-center gap-2">🧰 Tools & Other Skills</h3>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-2">
             <span class="skill-badge">☁️ AWS</span>
+            <span class="skill-badge">🔥 Firebase</span>
             <span class="skill-badge">🧰 Git</span>
             <span class="skill-badge">🐱 GitHub</span>
             <span class="skill-badge">👁️ Lookout</span>
