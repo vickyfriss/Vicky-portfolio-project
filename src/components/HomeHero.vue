@@ -13,7 +13,10 @@
     </p>
 
     <!-- Main Buttons -->
-    <div class="button-group animate-fade-in delay-400 mb-12" ref="buttonGroup">
+    <div
+      class="button-group animate-fade-in delay-400 mb-12 invisible"
+      ref="buttonGroup"
+    >
       <a href="mailto:vicky_friss@hotmail.com" class="btn btn-primary cta-btn">Let's work together</a>
       <a href="#projects" class="btn btn-outline">See my Work</a>
     </div>
@@ -53,13 +56,19 @@ const setButtonWidths = () => {
 
   // Apply largest width to all buttons
   buttons.forEach(btn => (btn.style.width = maxWidth + 'px'))
+
+  // Make buttons visible after widths are set
+  buttonGroup.value.classList.remove('invisible')
 }
 
 onMounted(() => {
   // Wait for fonts to load before measuring
   document.fonts.ready.then(() => {
-    setButtonWidths()
-    window.addEventListener('resize', setButtonWidths)
+    // Add a small delay to ensure layout is fully ready
+    setTimeout(() => {
+      setButtonWidths()
+      window.addEventListener('resize', setButtonWidths)
+    }, 100) // 100ms delay can be increased if needed
   })
 })
 </script>
@@ -72,5 +81,13 @@ html {
 /* Ensure buttons have consistent height */
 .button-group .btn {
   min-height: 48px;
+}
+
+/* Optional smooth fade-in */
+.button-group {
+  transition: opacity 0.3s ease;
+}
+.button-group.invisible {
+  opacity: 0;
 }
 </style>
