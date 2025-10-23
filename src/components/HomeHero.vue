@@ -1,7 +1,7 @@
 <template>
   <section class="section section-flex-center min-h-screen">
     <!-- Hero Heading -->
-    <h1 class="hero-heading animate-fade-in">
+    <h1 class="hero-heading animate-fade-in text-center">
       <span class="subtitle">Hi, I'm</span>
       Victoria <br>
       <span class="subtitle">Data Scientist & Frontend Developer</span>
@@ -57,8 +57,16 @@ const setButtonWidths = () => {
 
 onMounted(() => {
   nextTick(() => {
+    // First measurement
     setButtonWidths()
     window.addEventListener('resize', setButtonWidths)
+
+    // Reload page on mobile after 3 seconds
+    if (window.innerWidth < 640) { // mobile breakpoint
+      setTimeout(() => {
+        window.location.href = window.location.href
+      }, 3000)
+    }
   })
 })
 </script>
@@ -66,5 +74,10 @@ onMounted(() => {
 <style>
 html {
   scroll-behavior: smooth; /* enables smooth scrolling */
+}
+
+/* Optional: ensure buttons have consistent height */
+.button-group .btn {
+  min-height: 48px;
 }
 </style>
