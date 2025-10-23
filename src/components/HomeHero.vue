@@ -34,7 +34,7 @@
 </template>
 
 <script setup>
-import { onMounted, nextTick, ref } from 'vue'
+import { onMounted, ref } from 'vue'
 
 const buttonGroup = ref(null)
 
@@ -56,27 +56,20 @@ const setButtonWidths = () => {
 }
 
 onMounted(() => {
-  nextTick(() => {
-    // First measurement
+  // Wait for fonts to load before measuring
+  document.fonts.ready.then(() => {
     setButtonWidths()
     window.addEventListener('resize', setButtonWidths)
-
-    // Reload page on mobile after 3 seconds
-    if (window.innerWidth < 640) { // mobile breakpoint
-      setTimeout(() => {
-        window.location.href = window.location.href
-      }, 3000)
-    }
   })
 })
 </script>
 
 <style>
 html {
-  scroll-behavior: smooth; /* enables smooth scrolling */
+  scroll-behavior: smooth;
 }
 
-/* Optional: ensure buttons have consistent height */
+/* Ensure buttons have consistent height */
 .button-group .btn {
   min-height: 48px;
 }
